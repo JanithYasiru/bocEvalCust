@@ -1,0 +1,55 @@
+body {
+    background-image: url('../User/Assets/Images/Web_Desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+/* For tablets and larger screens */
+@media (max-width: 1200px) {
+    body {
+        background-image: url('../User/Assets/Images/Web_Medium.jpg');
+    }
+}
+
+/* For mobile phones and smaller screens */
+@media (max-width: 768px) {
+    body {
+        background-image: url('../User/Assets/Images/Web_Mobile.jpg');
+    }
+}
+.card {
+    margin-bottom: 15px;
+}
+.card-header {
+    background-color: #ffd900;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.card-body {
+    background-color: #f1f1f1;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+.submit-btn {
+    background-color: #ffd900;
+    color: rgb(0, 0, 0);
+}
+.submit-btn:hover {
+    background-color: #ffffff;
+}
+   
+.custom-shadow {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.row{
+    background-color: #3b3b3b;
+}
