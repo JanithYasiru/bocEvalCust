@@ -1,5 +1,5 @@
 body {
-    background-image: url('../User/Assets/Images/Web_Desktop.jpg');
+    background-image: url('Assets/Images/Web_Desktop.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,14 +9,14 @@ body {
 /* For tablets and larger screens */
 @media (max-width: 1200px) {
     body {
-        background-image: url('../User/Assets/Images/Web_Medium.jpg');
+        background-image: url('Assets/Images/Web_Medium.jpg');
     }
 }
 
 /* For mobile phones and smaller screens */
 @media (max-width: 768px) {
     body {
-        background-image: url('../User/Assets/Images/Web_Mobile.jpg');
+        background-image: url('Assets/Images/Web_Mobile.jpg');
     }
 }
 .card {
