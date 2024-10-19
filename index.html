@@ -29,8 +29,8 @@
             <div class="row p-3">
 
                 <div class="col-12 text-center">
-                    <img src="Assets/Images/BOC_Logo_WZ_Rounded.png" class="img-fluid custom-shadow"
-                        width="100px" height="100px" alt="">
+                    <img src="Assets/Images/BOC_Logo_WZ_Rounded.png" class="img-fluid custom-shadow" width="100px"
+                        height="100px" alt="">
                     <h5 class="text-center mb-1 mt-2 text-white">Bank of Ceylon - Monaragala Area</h5>
 
                 </div>
@@ -51,63 +51,39 @@
                 </select>
 
                 <label>Select Language - භාශාව තෝරන්න - மொழியை தேர்ந்தெடுங்கள் </label>
-                <select id="Lang">
-                    <option value="Sinhala">සිංහල</option>
-                    <option value="Tamil">தமிழ்</option>
-                    <option value="English">English</option>
-                </select>
 
-                <button type="submit"> ඉදිරියට යන්න - தொடரவும் - Continue</button>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary m-2"
+                        onclick="navigateToPage('Sinhala')"><strong>සිංහල</strong></button>
+                    <button type="button" class="btn btn-primary m-2"
+                        onclick="navigateToPage('Tamil')"><strong>தமிழ்</strong></button>
+                    <button type="button" class="btn btn-primary m-2"
+                        onclick="navigateToPage('English')"><strong>English</strong></button>
+                </div>
 
             </form>
         </div>
     </div>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- Custom JS -->
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyC0JLvxC286PUDwjx2oeEkhOMTr_TsYPRg",
-            authDomain: "evaluationsysboc.firebaseapp.com",
-            projectId: "evaluationsysboc",
-            storageBucket: "evaluationsysboc.appspot.com",
-            messagingSenderId: "581990176597",
-            appId: "1:581990176597:web:2c5dd4ed7df2f3babc01dc",
-            measurementId: "G-MZ4TLL0THZ"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const analytics = getAnalytics(app);
-
-        const Branch = document.getElementById('Branch');
-        const Lang = document.getElementById('Lang');
-        const MainForm = document.getElementById('MainForm');
-
-        let contdToQuestionnaire = evt => {
-            evt.preventDefault();
-
+    <script>
+        let navigateToPage = lang => {
             sessionStorage.setItem("branch-num", JSON.stringify(Branch.value));
 
-            if (Lang.value === "Sinhala") {
-                return
-            } else if (Lang.value === "Tamil") {
-               return
-            } else if (Lang.value === "English") {
+            if (lang === "Sinhala") {
+                // Set to Sinhala page URL
+            } else if (lang === "Tamil") {
+                // Set to Tamil page URL
+            } else if (lang === "English") {
                 window.location.href = 'English.html';
             }
-        }
 
-        MainForm.addEventListener('submit', contdToQuestionnaire);
+        }
     </script>
+
 </body>
 
 </html>
