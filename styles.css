@@ -53,3 +53,9 @@ textarea {
 .row{
     background-color: #3b3b3b;
 }
+.emoji-option {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+.form-check {
+    margin: 0.09rem; /* Adjust spacing as needed */
+}
