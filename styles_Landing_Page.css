@@ -65,8 +65,8 @@ body::before {
 }
 
 .form-container button {
-    background: #007bff;
-    color: #fff;
+    background: #ffd900;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -76,7 +76,8 @@ body::before {
 }
 
 .form-container button:hover {
-    background: #0056b3;
+    background: #000000;
+    color: #ffffff;
 }
 
 .row {
